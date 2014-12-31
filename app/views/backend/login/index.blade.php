@@ -18,10 +18,23 @@
         <script src="{{asset('assets/js/jquery-1.11.2.min.js')}}"></script>
     </head>
     <body class="bg-black">
+@if (Session::has('notif'))
+    <div class="alert alert-notif alert-success alert-dismissable" style="cursor:pointer;text-align:center;">
+        {{ Session::get('notif') }}
+    </div>
+  @elseif ($errors->has('notif'))
+    <div class="alert alert-notif alert-danger alert-dismissable" style="cursor:pointer;text-align:center;">
+        {{ $break = '' }}
+        @foreach ($errors->all() as $error)
+                {{ $error }}
+                {{ $break = '<br/>' }}
+        @endforeach
+    </div>
+  @endif
 
         <div class="form-box" id="login-box">
             <div class="header">Sign In</div>
-            <form action="{{URL::to('login')}}" method="POST" class="form-valid">
+            {{ Form::open(array('class' => 'form-valid','url'=>'auth/login')); }}
                 <div class="body bg-gray">
                     <div class="form-group">
                         <input type="email" name="email" class="form-control" data-rule-required="true" placeholder="Email"/>
@@ -40,7 +53,7 @@
                     
                     <!-- <a href="register.html" class="text-center">Register a new membership</a> -->
                 </div>
-            </form>
+            {{ Form::close(); }}
 
 <!--             <div class="margin text-center">
                 <span>Sign in using social networks</span>
