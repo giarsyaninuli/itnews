@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <title> Log in | it-news</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-        <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{asset('assets/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="<?php echo asset('assets/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo asset('assets/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
-        <link href="{{asset('assets/css/AdminLTE.css')}}" rel="stylesheet" type="text/css" />
+        <link href="<?php echo asset('assets/css/AdminLTE.css'); ?>" rel="stylesheet" type="text/css" />
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,26 +15,26 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-        <script src="{{asset('assets/js/jquery-1.11.2.min.js')}}"></script>
+        <script src="<?php echo asset('assets/js/jquery-1.11.2.min.js'); ?>"></script>
     </head>
     <body class="bg-black">
-@if (Session::has('notif'))
+<?php if (Session::has('notif')): ?>
     <div class="alert alert-notif alert-success alert-dismissable" style="cursor:pointer;text-align:center;">
-        {{ Session::get('notif') }}
+        <?php echo Session::get('notif'); ?>
     </div>
-  @elseif ($errors->has('notif'))
+  <?php elseif ($errors->has('notif')): ?>
     <div class="alert alert-notif alert-danger alert-dismissable" style="cursor:pointer;text-align:center;">
-        {{ $break = '' }}
-        @foreach ($errors->all() as $error)
-                {{ $error }}
-                {{ $break = '<br/>' }}
-        @endforeach
+        <?php echo $break = ''; ?>
+        <?php foreach ($errors->all() as $error): ?>
+                <?php echo $error; ?>
+                <?php echo $break = '<br/>'; ?>
+        <?php endforeach; ?>
     </div>
-  @endif
+  <?php endif; ?>
 
         <div class="form-box" id="login-box">
             <div class="header">Sign In</div>
-            {{ Form::open(array('class' => 'form-valid','url'=>'auth/login')); }}
+            <?php echo Form::open(array('class' => 'form-valid','url'=>'auth/login'));; ?>
                 <div class="body bg-gray">
                     <div class="form-group">
                         <input type="email" name="email" class="form-control" data-rule-required="true" placeholder="Email"/>
@@ -53,7 +53,7 @@
                     
                     <!-- <a href="register.html" class="text-center">Register a new membership</a> -->
                 </div>
-            {{ Form::close(); }}
+            <?php echo Form::close();; ?>
 
 <!--             <div class="margin text-center">
                 <span>Sign in using social networks</span>
@@ -66,9 +66,9 @@
         </div>
 
         
-        <script src="{{asset('assets/js/bootstrap.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('assets/js/validate/jquery.validate.js')}}" type="text/javascript"></script>
-        <!-- // <script src="{{asset('assets/js/validate/additional-methods.js')}}" type="text/javascript"></script> -->
+        <script src="<?php echo asset('assets/js/bootstrap.min.js'); ?>" type="text/javascript"></script>
+        <script src="<?php echo asset('assets/js/validate/jquery.validate.js'); ?>" type="text/javascript"></script>
+        <!-- // <script src="<?php echo asset('assets/js/validate/additional-methods.js'); ?>" type="text/javascript"></script> -->
         <script type="text/javascript">
         $(document).ready(function(){
             $(".form-valid").validate();

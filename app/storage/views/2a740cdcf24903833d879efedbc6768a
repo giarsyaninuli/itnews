@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-		<title>Admin System | {{$title}}</title>
+		<title>Admin System | <?php echo $title; ?></title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-        @yield('head-script')
+        <?php echo $__env->yieldContent('head-script'); ?>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -14,18 +14,18 @@
     </head>
     <body class="skin-blue">
     <script>
-       @if(Session::has('notif'))
-            notif_success("{{ Session::get('notif') }}");
-      @elseif ($errors->has('notif'))
-            {{ $break = '' }}
-            @foreach ($errors->all() as $error)
-                notif_error("{{ $error }}{{ $break = '<br/>' }}");
-            @endforeach
-      @endif 
+       <?php if(Session::has('notif')): ?>
+            notif_success("<?php echo Session::get('notif'); ?>");
+      <?php elseif ($errors->has('notif')): ?>
+            <?php echo $break = ''; ?>
+            <?php foreach ($errors->all() as $error): ?>
+                notif_error("<?php echo $error; ?><?php echo $break = '<br/>'; ?>");
+            <?php endforeach; ?>
+      <?php endif; ?> 
     </script>
         <!-- header logo: style can be found in header.less -->
         <header class="header">
-            <a href="{{URL::to('panel/dashboard')}}" class="logo">
+            <a href="<?php echo URL::to('panel/dashboard'); ?>" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
                 ADMIN SYSTEM
             </a>
@@ -40,13 +40,13 @@
                 </a>
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
-                        {{--@include('backend.layouts.partial.message')
+                        <?php /*<?php echo $__env->make('backend.layouts.partial.message', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-                        @include('backend.layouts.partial.notif')
+                        <?php echo $__env->make('backend.layouts.partial.notif', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                         
-                        @include('backend.layouts.partial.task')--}}
+                        <?php echo $__env->make('backend.layouts.partial.task', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>*/ ?>
                         
-                        @include('backend.layouts.partial.user') 
+                        <?php echo $__env->make('backend.layouts.partial.user', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?> 
 
                     </ul>
                 </div>
@@ -58,21 +58,21 @@
                 <!-- sidebar: style can be found in sidebar.less -->
                 <section class="sidebar">
                     <!-- Sidebar user panel -->
-                    @include('backend.layouts.partial.search')
+                    <?php echo $__env->make('backend.layouts.partial.search', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                     
                     <!-- /.search form -->
                     <!-- sidebar menu: : style can be found in sidebar.less -->
-                    @include('backend.layouts.partial.menu')
+                    <?php echo $__env->make('backend.layouts.partial.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                    
                 </section>
                 <!-- /.sidebar -->
             </aside>
 
             <!-- Right side column. Contains the navbar and content of the page -->
-            @yield('body')
+            <?php echo $__env->yieldContent('body'); ?>
         </div><!-- ./wrapper -->
 
-	@yield('end-script')
+	<?php echo $__env->yieldContent('end-script'); ?>
 	 
 	
     </body>

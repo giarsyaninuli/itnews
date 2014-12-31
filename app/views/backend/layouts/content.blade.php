@@ -7,7 +7,58 @@
         <!-- Ionicons -->
         <link href="{{asset('assets/css/ionicons.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
+
         <link href="{{asset('assets/css/AdminLTE.css')}}" rel="stylesheet" type="text/css"/>
+        <!-- <link href="{{asset('assets/js/')}}/notif/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+        <link href="{{asset('assets/js/')}}/notif/css/notifier.css" rel="stylesheet" type="text/css">
+
+        <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+        <script src="{{asset('assets/js')}}/jquery-ui.min.js"></script>
+        <script src="{{asset('assets/js')}}/notif/js/notifier.js"></script>
+        <script>
+
+        function notif_error(msg){
+            $.notifier({"type": "error",
+                "positionY": "top",
+                "positionX": "right",
+                "title": "Error",
+                "text": msg
+                });
+        }
+
+        function notif_success(msg){
+            $.notifier({"type": "success",
+            "positionY": "top",
+            "title": "Success",
+            "text": msg,
+             "animationIn" : 'bounce',
+                "animationOut" : 'drop',
+            "positionX": "right"
+            });
+        }
+
+        function notif_warning(msg){
+             $.notifier({"type": "warning",
+            "positionY": "top",
+            "title": "Warning",
+            "text": msg,
+            "positionX": "right",
+                 "animationIn" : 'highlight',
+                "animationOut" : 'blind'
+            });
+        }
+
+        function notif_info(msg){
+            $.notifier({"type": "info",
+                "positionY": "top",
+                     "animationIn" : 'slide',
+                    "animationOut" : 'fade',
+                "positionX": "right",
+                "title": "Information",
+                "text": msg
+            });
+        }
+        </script>
 @stop
 
 @section('body')
@@ -36,7 +87,7 @@
 @stop
 
 @section('end-script')
-        <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+        
         <script src="{{asset('assets/js/bootstrap.min.js')}}" type="text/javascript"></script>
         <!-- AdminLTE App -->
         <script src="{{asset('assets/js/AdminLTE/app.js')}}" type="text/javascript"></script>

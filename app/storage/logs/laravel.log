@@ -671,3 +671,198 @@ Stack trace:
 #10 /var/www/html/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #11 /var/www/html/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
 #12 {main} [] []
+[2014-12-31 06:34:19] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 06:34:25] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 08:23:35] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 08:23:44] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 08:26:21] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 08:30:27] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 09:08:43] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 16:37:20] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 16:45:38] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 16:46:20] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 16:46:24] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 16:46:51] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-12-31 17:54:20] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/itnews/bootstrap/compiled.php:5340
+Stack trace:
+#0 /var/www/itnews/bootstrap/compiled.php(4690): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 /var/www/itnews/bootstrap/compiled.php(4678): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/itnews/bootstrap/compiled.php(4670): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 /var/www/itnews/bootstrap/compiled.php(706): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/itnews/bootstrap/compiled.php(687): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 /var/www/itnews/bootstrap/compiled.php(1146): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 /var/www/itnews/bootstrap/compiled.php(7311): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/itnews/bootstrap/compiled.php(7908): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/itnews/bootstrap/compiled.php(7855): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/itnews/bootstrap/compiled.php(10897): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 /var/www/itnews/bootstrap/compiled.php(648): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 /var/www/itnews/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
