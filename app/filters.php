@@ -33,9 +33,29 @@ App::after(function($request, $response)
 |
 */
 
+// Route::filter('auth', function()
+// {
+// 	if (Auth::guest()) return Redirect::guest('login');
+// });
+
 Route::filter('auth', function()
 {
-	if (Auth::guest()) return Redirect::guest('login');
+
+	$session = Session::get('auth_session');
+
+    if(empty($session)){
+    	
+        return Redirect::to('/auth')->withErrors(array('notif'=>'Akses ditolak silahkan login terlebih dahulu.'));
+    }
+
+});
+
+Route::filter('visitor', function()
+{
+	$session = Session::get('auth_session');
+	if($session['group_id'] != 1){
+		return Redirect::to('/home');
+	}
 });
 
 

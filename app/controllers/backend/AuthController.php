@@ -50,9 +50,9 @@ class AuthController extends \BaseController {
                     }
                     if($check->group_id==1){
 
-		            	return Redirect::to('/dashboard')->with('notif','Welcome to Admin Area');
+		            	return Redirect::to('/panel/dashboard')->with('notif','Welcome to Admin Area');
                     }else{
-                    	return Redirect::to('/')->with('notif','Selamat datang di website kami');
+                    	return Redirect::to('/home')->with('notif','Selamat datang di website kami');
                     }
 		        }else{
 		            return Redirect::back()->withInput()->withErrors(array('notif'=>'Password tidak valid.'));
