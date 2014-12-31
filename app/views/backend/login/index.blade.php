@@ -2,7 +2,7 @@
 <html class="bg-black">
     <head>
         <meta charset="UTF-8">
-        <title>AdminLTE | Log in</title>
+        <title> Log in | it-news</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('assets/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
@@ -15,18 +15,19 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+        <script src="{{asset('assets/js/jquery-1.11.2.min.js')}}"></script>
     </head>
     <body class="bg-black">
 
         <div class="form-box" id="login-box">
             <div class="header">Sign In</div>
-            <form action="{{URL::to('login')}}" method="POST">
+            <form action="{{URL::to('login')}}" method="POST" class="form-valid">
                 <div class="body bg-gray">
                     <div class="form-group">
-                        <input type="text" name="userid" class="form-control" placeholder="Username"/>
+                        <input type="email" name="email" class="form-control" data-rule-required="true" placeholder="Email"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" class="form-control" placeholder="Password"/>
+                        <input type="password" name="password" class="form-control" data-rule-required="true" placeholder="Password"/>
                     </div>          
                     <div class="form-group">
                         <input type="checkbox" name="remember_me"/> Remember me
@@ -51,8 +52,18 @@
             </div> -->
         </div>
 
-        <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+        
         <script src="{{asset('assets/js/bootstrap.min.js')}}" type="text/javascript"></script>
-
+        <script src="{{asset('assets/js/validate/jquery.validate.js')}}" type="text/javascript"></script>
+        <!-- // <script src="{{asset('assets/js/validate/additional-methods.js')}}" type="text/javascript"></script> -->
+        <script type="text/javascript">
+        $(document).ready(function(){
+            console.log("kesini");
+            $(".form-valid").validate();
+        });
+        </script>
+        <style>
+        .error { color: #b94a48; }
+        </style>
     </body>
 </html>
