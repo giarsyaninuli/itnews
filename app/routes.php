@@ -16,7 +16,7 @@ Route::get('/', function()
 	return View::make('comingsoon');
 });
 
-Route::get('panel','AuthController@index');
+Route::controller('auth','AuthController');
 
 // Route::group(array('before' => 'auth'), function()
 // {
