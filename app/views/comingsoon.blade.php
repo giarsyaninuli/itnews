@@ -16,6 +16,7 @@
 		  height: 250px;
 		  margin: 0 auto;
 		  position: relative;
+		  margin-top: 130px;
 		}
 
 		.circle {
