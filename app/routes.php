@@ -11,19 +11,22 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('comingsoon');
-});
 
 Route::controller('auth','AuthController');
 
 // Route::group(array('before' => 'auth'), function()
 // {
-		Route::group(array('prefix' => 'panel'), function()
-		{
+		// Route::group(array('prefix' => 'panel'), function()
+		// {
 		    Route::get('dashboard', 'DashboardController@index');
 
-		});
+		// });
 
 // });
+
+
+
+Route::get('/', function()
+{
+	return View::make('comingsoon');
+});
